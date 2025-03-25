@@ -65,7 +65,7 @@
             margin-bottom: 20px;
         }
         .news-box {
-            height: 200px;
+            height: 150px;
             font-size: 20px;
         }
         .archive-box {
@@ -134,8 +134,6 @@
             document.getElementById('home').style.display = 'none';
             document.getElementById('archive').style.display = 'none';
             document.getElementById('guides').style.display = 'none';
-            document.getElementById('departments').style.display = 'none';
-            document.getElementById('about').style.display = 'none';
             document.getElementById(page).style.display = 'block';
         }
         function closePopup() {
@@ -149,7 +147,7 @@
 <body>
     <div class="popup-overlay" id="popup-overlay">
         <div class="popup">
-            <p>Warning! The most optimal method of viewing this website is in a normal browser tab on a computer or laptop. Expect insane bugs on mobile. Sorry!</p>
+            <p>Warning! The most optimal method of viewing this website is in a normal browser tab using a computer or laptop. Expect insane bugs on mobile. Sorry!</p>
             <button onclick="closePopup()">ok :(</button>
         </div>
     </div>
@@ -160,19 +158,19 @@
             <li><a onclick="showPage('home')">Home</a></li>
             <li><a onclick="showPage('archive')">Archive</a></li>
             <li><a onclick="showPage('guides')">Guides</a></li>
-            <li><a onclick="showPage('departments')">Departments</a></li>
-            <li><a onclick="showPage('about')">About</a></li>
         </ul>
     </div>
     <div class="content">
         <div id="home">
             <h1>Welcome! This is the official Facility-03 "Black Dagger" Information Terminal </h1>
-            <div class="news-box">This website has been made to organise everything regarding lore and site information, so users don't have to <br>frantically search our Discord server for the correct channels that contain the information they desire to know. <br>The website may not have everything, but it has the most important things users may want to know. It is still <br>under heavy construction, so expect changes in the near future. As of now it looks simple and empty, but that <br>may soon change.<br><br>Happy browsing! coded by axilonis :D
+            <div class="news-box">This website has been made to organise everything regarding lore and site information, so users don't have to <br>frantically search our Discord server for the correct channels that contain the information they desire to know. <br>The website may not have everything, but it has the most important things users may want to know. It is still <br>under heavy construction, so expect changes in the near future. As of now it looks simple and empty, but that <br>may soon change.<br><br>Happy browsing! -- axilonis
             <img src="andrew-crying.png" alt="" class="small-image">
             </div>
             <h1>News & Announcements</h1>
-            <div class="news-box">25/03/2025 <br>10:39 UTC <br> <br>Files have been uploaded to Github. The website is now being succesfully hosted using Github, and anyone can access it using the link.</div>
-            <div class="news-box">20/03/2025 <br>19:24 UTC <br> <br>Development for this website has begun.</div>
+            <div class="news-box">25/03/2025 <br>14:54 UTC <br> <br>+ Removed a few unecessary info</div>
+            <div class="news-box">25/03/2025 <br>13:47 UTC <br> <br>+ Faction Hub has been created</div>
+            <div class="news-box">25/03/2025 <br>10:39 UTC <br> <br>+ Files have been uploaded to Github. The website is now being succesfully hosted using Github, and anyone can access it using the link</div>
+            <div class="news-box">20/03/2025 <br>19:24 UTC <br> <br>+ Development for this website has begun</div>
         </div>
         <div id="archive" style="display: none;">
             <h1>Archive</h1>
