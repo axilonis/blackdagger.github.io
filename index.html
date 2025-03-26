@@ -149,7 +149,7 @@
             width: 450px; 
             height: auto;
             margin-right: -20px;
-            margin-top: 75px;
+            margin-top: 25px;
             float: right; 
             opacity: 0.1;
             z-index: -2;
@@ -162,58 +162,13 @@
             margin-bottom: 65px;
         }
 
-        .feedback {
-            position: absolute;
-            bottom: 0;
-            left: 1;
-            margin-bottom: 100px;
-        }
-
-        .feedback-container {
-            background: #1A1A1A;
-            padding: 20px;
-            border-radius: 8px;
-            width: 600px;
-            margin: left;
-            margin-top: 25px;
-        }
-        .feedback-container label {
-            display: block;
-            margin-top: 10px;
-            font-size: 16px;
-            color: #E0E0E0;
-        }
-        .feedback-container input, .feedback-container textarea {
-            width: 97%;
-            padding: 10px;
-            margin-top: 5px;
-            border: none;
-            border-radius: 5px;
-            background: #2d2d2d;
-            color: #E0E0E0;
-        }
-        .feedback-container button {
-            background: #2b5fc0;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            margin-top: 15px;
-            cursor: pointer;
-            font-size: 16px;
-            border-radius: 5px;
-            width: 100%;
-        }
-        .feedback-container button:hover {
-            background: #234a96;
-        }
-
-
     </style>
     <script>
         function showPage(page) {
             document.getElementById('home').style.display = 'none';
             document.getElementById('archive').style.display = 'none';
             document.getElementById('guides').style.display = 'none';
+            document.getElementById('gallery').style.display = 'none';
             document.getElementById(page).style.display = 'block';
         }
         function closePopup() {
@@ -238,13 +193,14 @@
             <li><a onclick="showPage('home')">Home</a></li>
             <li><a onclick="showPage('archive')">Archive</a></li>
             <li><a onclick="showPage('guides')">Guides</a></li>
+            <li><a onclick="showPage('gallery')">Gallery</a></li>
             <img src="blackdagger.png" alt="" class="blackdagger">
             <li><a href="https://discord.gg/kSyrX5cjXM" class="discord">Discord</a></li>
         </ul>
     </div>
     <div class="content">
         <div id="home">
-            <h1>Welcome! This is the official Facility-03 "Black Dagger" Information Terminal </h1>
+            <h1>Welcome! This is the official Facility-03 "Black Dagger" Database </h1>
             <div class="welcome-box">This website has been made to organise everything regarding lore and site information, so users don't have to <br>frantically search our Discord server for the correct channels that contain the information they desire to know. <br>The website may not have everything, but it has the most important things users may want to know. It is still <br>under heavy construction, so expect changes in the near future. As of now it looks simple and empty, but that <br>may soon change.<br><br>Happy browsing! -- axilonis
             <img src="andrew-crying.png" alt="" class="small-image">
             </div>
@@ -276,6 +232,27 @@
             <h1>Guides</h1>
             <div class="about-box"> [SM] Session Moderator Guide <br><br> what the fuck do i write</div>
             <img src="under.png" alt="" width="1500px" height="1000px"> 
+        </div>  
+
+        <div id="gallery" style="display: none;">
+            <h1>Gallery (most recent)</h1>
+            <img src="1.png" alt="" class="gallery">
+            <img src="2.png" alt="" class="gallery">
+            <img src="3.png" alt="" class="gallery">
+            <img src="4.png" alt="" class="gallery">
+            <img src="5.png" alt="" class="gallery">
+            <img src="6.png" alt="" class="gallery">
+            <img src="7.png" alt="" class="gallery">
+            <img src="8.png" alt="" class="gallery">
+            <img src="9.png" alt="" class="gallery">
+            <img src="10.png" alt="" class="gallery">
+            <img src="11.png" alt="" class="gallery">
+            <img src="12.png" alt="" class="gallery">
+            <img src="13.png" alt="" class="gallery">
+            <img src="14.png" alt="" class="gallery">
+            <img src="15.png" alt="" class="gallery">
+            <img src="16.png" alt="" class="gallery">
+
         </div>  
 </body>
 </html>
