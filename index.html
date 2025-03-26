@@ -6,20 +6,20 @@
     <title>Facility-03 "Black Dagger"</title>
     <style>
         body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('image.png') no-repeat center center fixed;
-    background-size: cover;
-    opacity: 0.1;
-    z-index: -1;
-}
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('image.png') no-repeat center center fixed;
+            background-size: cover;
+            opacity: 0.1;
+            z-index: -1;
+        }
         body {
             font-family: Arial, sans-serif;
-            background-color: #2D2D2D;
+            background-color: #2d2d2d;
             color: #E0E0E0;
             margin: 0;
             padding: 0;
@@ -76,6 +76,7 @@
             height: 125px;
             font-size: 20px;
         }
+
         .archive-box {
             padding: 7px;
             margin-bottom: 7px;
@@ -99,7 +100,7 @@
             margin-right: 1px;
             margin-top: -212px;
             float: right; 
-}
+        }
         .popup-overlay {
             position: fixed;
             top: 0;
@@ -138,11 +139,73 @@
         }
         .news-box, .archive-box, .about-box, .welcome-box, .news-box1 {
             transition: transform 0.2s ease-in-out;
-}
+        }
 
         .news-box:hover, .archive-box:hover, .about-box:hover, .welcome-box:hover, .news-box1:hover {
             transform: scale(1.03);
-}
+        }
+
+        .blackdagger {
+            width: 450px; 
+            height: auto;
+            margin-right: -20px;
+            margin-top: 75px;
+            float: right; 
+            opacity: 0.1;
+            z-index: -2;
+        }
+
+        .discord {
+            position: absolute;
+            bottom: 0;
+            left: 1;
+            margin-bottom: 65px;
+        }
+
+        .feedback {
+            position: absolute;
+            bottom: 0;
+            left: 1;
+            margin-bottom: 100px;
+        }
+
+        .feedback-container {
+            background: #1A1A1A;
+            padding: 20px;
+            border-radius: 8px;
+            width: 600px;
+            margin: left;
+            margin-top: 25px;
+        }
+        .feedback-container label {
+            display: block;
+            margin-top: 10px;
+            font-size: 16px;
+            color: #E0E0E0;
+        }
+        .feedback-container input, .feedback-container textarea {
+            width: 97%;
+            padding: 10px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+            background: #2d2d2d;
+            color: #E0E0E0;
+        }
+        .feedback-container button {
+            background: #2b5fc0;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin-top: 15px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .feedback-container button:hover {
+            background: #234a96;
+        }
 
 
     </style>
@@ -175,6 +238,8 @@
             <li><a onclick="showPage('home')">Home</a></li>
             <li><a onclick="showPage('archive')">Archive</a></li>
             <li><a onclick="showPage('guides')">Guides</a></li>
+            <img src="blackdagger.png" alt="" class="blackdagger">
+            <li><a href="https://discord.gg/kSyrX5cjXM" class="discord">Discord</a></li>
         </ul>
     </div>
     <div class="content">
@@ -184,10 +249,10 @@
             <img src="andrew-crying.png" alt="" class="small-image">
             </div>
             <h1>News & Announcements</h1>
-            <div class="news-box">26/03/2025 <br>18:00 UTC <br> <br>+ wicketderewok q&a</div>
-            <div class="news-box">25/03/2025 <br>13:47 UTC <br> <br>+ Faction Hub has been created</div>
-            <div class="news-box">25/03/2025 <br>10:39 UTC <br> <br>+ files have been uploaded to Github, the website is now being succesfully hosted using Github and anyone can access it using the link</div>
-            <div class="news-box">20/03/2025 <br>19:24 UTC <br> <br>+ development for this website has begun</div>
+            <div class="news-box">26/03/2025 <br>18:00 UTC <br> <br>> wicketderewok q&a</div>
+            <div class="news-box">25/03/2025 <br>13:47 UTC <br> <br>> Faction Hub has been created</div>
+            <div class="news-box">25/03/2025 <br>10:39 UTC <br> <br>> files have been uploaded to Github, the website is now being succesfully hosted using Github and anyone can access it using the link</div>
+            <div class="news-box">20/03/2025 <br>19:24 UTC <br> <br>> development for this website has begun</div>
         </div>
         <div id="archive" style="display: none;">
             <h1>Archive</h1>
@@ -209,38 +274,8 @@
         </div>
         <div id="guides" style="display: none;">
             <h1>Guides</h1>
-            <div class="about-box"> [SM] Session Moderator Guide <br><br> what the fuck do i write</div> 
+            <div class="about-box"> [SM] Session Moderator Guide <br><br> what the fuck do i write</div>
             <img src="under.png" alt="" width="1500px" height="1000px"> 
-        </div>
-        <div id="departments" style="display: none;">
-            <h1>Departments</h1>
-            <div class="about-box">bbbbbbbbbbb </div>
-        </div>
-        <div id="about" style="display: none;">
-            <h1>About Us</h1>
-            <div class="about-box">
-                <h2>General Information</h2>
-                Facility-03, codenamed "Black Dagger", is one of the most classified and well-guarded installations under the jurisdiction of the European Directive for Containment and Eradication (EDCE). <br>Unlike the Foundation, which focuses on indefinite containment, the EDCE operates under a doctrine of pragmatic security - indestructible Anomalies are to be contained, while all others are to be neutralized permanently.
-                
-                <br>
-                <br>Black Dagger was established in 2003 after a catastrophic breach at Facility-01 "Iron Bastion", which resulted in the loss of over 700 personnel and the complete destruction of the site. This event, known as "The Dresden Collapse," forced the EDCE to rethink its strategy: traditional containment was no longer enough. Instead, a specialized site was needed - one dedicated to the strategic eradication of Anomalies deemed too dangerous to exist.
-                <br>
-                <br>While direct cooperation with the SCP Foundation is rare, there have been covert exchanges of information, particularly when the EDCE requires intel on high-priority Anomalies the Foundation refuses to terminate.
-                
-                However, Black Dagger has also been responsible for several "extractions" - targeted operations where Anomalies held in Foundation custody were forcibly removed and sent for termination. The Foundation considers these acts highly illegal and provocative, leading to occasional skirmishes between Foundation Mobile Task Forces and EDCE operatives.
-                
-                An infamous case was "Operation Eclipse" in 2016, where Black Dagger forces infiltrated Site-14 during a containment failure, triggered by EDCE moles and exfiltrated Anomaly-7382, a self-replicating organism the Foundation refused to terminate due to potential research value. The EDCE proceeded to obliterate all instances within 48 hours. While the Foundation attempted retaliation, diplomatic pressure from European governments forced them to stand down.
-                <br>
-                <br><h2>Map of all EDCE Facilities</h2>
-                EDCE-HQ: Located near Brussels, manages all Facilities
-                <br>Facility-01: German-Polish Border, first site, rebuilt after the "Dresden Collapse"
-                <br>Facility-02: Arctic Facility, contains high-risk anomalies
-                <br>Facility-03: Austrian Alps, biggest site, contains most anomalies
-                <br>Facility-04: Estonia, also serves as observation post monitoring Russia
-                <br>Facility-05: Greece, naval base for the Mediterranean sea
-                <br>Facility-06: Spain, naval base for the Atlantic ocean</div>
-                <div class="archive-box"><a href="https://docs.google.com/document/d/1UPPsdxZIfidxagQFAUmpAWvO5TZLJcHi5MY9w_wRa3Y/edit?usp=drivesdk">More information here</a></div>
-        </div>
-    </div>
+        </div>  
 </body>
 </html>
