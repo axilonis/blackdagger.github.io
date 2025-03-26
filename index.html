@@ -26,7 +26,7 @@
             display: flex;
         }
         .sidebar {
-            width: 240px;
+            width: 150px;
             background: #1A1A1A;
             padding: 20px;
             height: 100vh;
@@ -54,7 +54,7 @@
             cursor: pointer;
         }
         .content {
-            margin-left: 270px;
+            margin-left: 210px;
             padding: 20px;
             width: calc(100% - 270px);
         }
@@ -79,8 +79,9 @@
         .archive-box {
             padding: 7px;
             margin-bottom: 7px;
-            width: 100%;
+            width: 98%;
             text-align: left;
+            margin-left: 0px;
         }
         .archive-box a {
             color: #2b5fc0;
@@ -135,6 +136,14 @@
             margin-top: 0px;
             float: left; 
         }
+        .news-box, .archive-box, .about-box, .welcome-box, .news-box1 {
+            transition: transform 0.2s ease-in-out;
+}
+
+        .news-box:hover, .archive-box:hover, .about-box:hover, .welcome-box:hover, .news-box1:hover {
+            transform: scale(1.03);
+}
+
 
     </style>
     <script>
@@ -175,7 +184,7 @@
             <img src="andrew-crying.png" alt="" class="small-image">
             </div>
             <h1>News & Announcements</h1>
-            <div class="news-box1">25/03/2025 <br>14:54 UTC <br> <br>+ removed a few unecessary info <br>+ updated the news boxes sizes a bit</div>
+            <div class="news-box">26/03/2025 <br>18:00 UTC <br> <br>+ wicketderewok q&a</div>
             <div class="news-box">25/03/2025 <br>13:47 UTC <br> <br>+ Faction Hub has been created</div>
             <div class="news-box">25/03/2025 <br>10:39 UTC <br> <br>+ files have been uploaded to Github, the website is now being succesfully hosted using Github and anyone can access it using the link</div>
             <div class="news-box">20/03/2025 <br>19:24 UTC <br> <br>+ development for this website has begun</div>
