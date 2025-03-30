@@ -20,7 +20,7 @@
         }
         body {
             font-family: Arial, sans-serif;
-            background-color: #2d2d2d;
+            background-color: #111111;
             color: #E0E0E0;
             margin: 0;
             padding: 0;
@@ -178,6 +178,116 @@
             margin-bottom: 65px;
         }
 
+        .anderson-cover {
+            position: relative;
+            background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), 
+            url('anderson.png') no-repeat center center;
+            background-size: cover;
+            padding: 20px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .gru-cover {
+            position: relative;
+            background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), 
+            url('grubg.png') no-repeat center center;
+            background-size: cover;
+            padding: 20px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .anderson-cover, .about-box, .gru-cover{
+            position: relative;
+            z-index: 2;
+        }
+
+        .anderson-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 100px;
+            height: auto;
+        }
+
+        .gru-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 100px;
+            height: auto;
+        }
+
+        .department-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 100px;
+            height: auto;
+        }
+
+        .ts-cover {
+            position: relative;
+            background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), 
+            url('tsicon.png') no-repeat center center;
+            background-size: cover;
+            padding: 20px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .sced-cover {
+            position: relative;
+            background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), 
+            url('scedicon.png') no-repeat center center;
+            background-size: cover;
+            padding: 20px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .medical-cover {
+            position: relative;
+            background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), 
+            url('medicalicon.png') no-repeat center center;
+            background-size: cover;
+            padding: 20px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .fets-cover {
+            position: relative;
+            background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), 
+            url('fetsicon.png') no-repeat center center;
+            background-size: cover;
+            padding: 20px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .fms-cover {
+            position: relative;
+            background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), 
+            url('fmsicon.png') no-repeat center center;
+            background-size: cover;
+            padding: 20px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .acns-cover {
+            position: relative;
+            background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), 
+            url('acnsicon.png') no-repeat center center;
+            background-size: cover;
+            padding: 20px;
+            border-radius: 5px;
+            color: white;
+        }
+
+
     </style>
     <script>
         function showPage(page) {
@@ -186,7 +296,6 @@
             document.getElementById('departments').style.display = 'none';
             document.getElementById('staff').style.display = 'none';
             document.getElementById('factions').style.display = 'none';
-            document.getElementById('gallery').style.display = 'none';
             document.getElementById(page).style.display = 'block';
         }
         function closePopup() {
@@ -213,7 +322,6 @@
             <li><a onclick="showPage('departments')">Departments</a></li>
             <li><a onclick="showPage('staff')">Staff Forms</a></li>
             <li><a onclick="showPage('factions')">Factions</a></li>
-            <li><a onclick="showPage('gallery')">Gallery</a></li>
             <img src="blackdagger1.png" alt="" class="blackdagger">
             <li><a href="https://discord.gg/kSyrX5cjXM" class="discord">Discord</a></li>
         </ul>
@@ -225,6 +333,9 @@
             <img src="andrew-crying.png" alt="" class="small-image">
             </div>
             <h1>News & Announcements</h1>
+            <div class="news-box">30/03/2025 <br>19:00 UTC <br> <br>> Small announcement from me - School will get a bit busy for me again until easter I think, and I might not be able to make quick changes to the website if anybody desires during the week. Please be patient, as I will eventually fulfill all of your requests if needed. I will let you guys know when I will be more free.</div>
+            <div class="news-box">30/03/2025 <br>19:00 UTC <br> <br>> QoL Update #1</div>
+            <div class="news-box">30/03/2025 <br>18:00 UTC <br> <br>> GRU Division "P" and Anderson Robotics have been added to the factions tab, congrats on being the first ones!</div>
             <div class="news-box">29/03/2025 <br>13:40 UTC <br> <br>> Thank you for the feedback! Grammar has been updated in general</div>
             <div class="news-box">29/03/2025 <br>09:48 UTC <br> <br>> Website has been uploaded to the public</div>
             <div class="news-box">28/03/2025 <br>05:50 UTC <br> <br>> EDCE Legal Codes and Site Protocols have been made</div>
@@ -285,51 +396,75 @@
             <br>
             
             <h1>Test Subjects [TS]</h1>
-            <div class="about-box">> Test subjects are, like the name suggests, the ones that will be used to test anomalies or do labor which has a high risk of killing EDCE personnel
+            <div class="about-box">
+            <div class="ts-cover">> Test subjects are, like the name suggests, the ones that will be used to test anomalies or do labor which has a high risk of killing EDCE personnel
                 <br>> They know of their past, taken from prisons, either death row or without people that will miss them - This often makes them very volatile, so SCED is always allowed to use force 
                 <br>> Most ethical rules don't apply to them
+            </div>
             </div>
             <div class="archive-box"><a href="https://discord.gg/n8J35Zz6KM">Join Here</a></div>
             <br>
 
             <h1>Security & Containment Enforcement Division [SCED]</h1>
-            <div class="about-box">> So far the most popular department, they are general facility guards that ensure everything goes smoothly without issues
+            
+            <div class="about-box">
+                <div class="sced-cover">> So far the most popular department, they are general facility guards that ensure everything goes smoothly without issues
                 <br>> They are usually stationed at either checkpoints, TSC, or patrolling the hallways
                 <br>> They have full permission to use lethal force if anything threatens the safety of other personnel
+            </div>
             </div>
             <div class="archive-box"><a href="https://discord.gg/5KcjqDfFza">Join Here</a></div>
             <br>
 
             <h1>Specialized Counter-Anomaly Rapid Response & Enforcement Detachment [SCARRED]</h1>
-            <div class="about-box">> SCARRED are the equivalent of MTF, the only difference being is that they are permanently stationed at the site
+            <div class="about-box">
+            <div class="sced-cover">
+            > SCARRED are the equivalent of MTF, the only difference being is that they are permanently stationed at the site
                 <br>> They are usually equipped with heavy weaponry, and they will respond to any disruptencies or threats in the facility as quick as possible
                 <br>> Rarely seen in TSC
+            </div>
             </div>
             <div class="archive-box"><a href="https://discord.gg/5KcjqDfFza">Join Here</a></div>
             <br>
 
             <h1>Anomaly Containment & Neutralization Sciences [ACNS]</h1>
-            <div class="about-box">> They are the researchers that conduct tests and contain anomalies
+            <div class="about-box">
+                <div class="acns-cover">> They are the researchers that conduct tests and contain anomalies
                 <br>> Their primary objective is to find ways to neutralize anomalies
                 <br>> They are not allowed to get past the stairs in TSC without a good reason
+            </div>
             </div>
             <div class="archive-box"><a href="https://discord.gg/MRnjMtE8aS">Join Here</a></div>
             <br>
 
             <h1>Health & Trauma Services [HTS]</h1>
-            <div class="about-box">> They are pretty much doctors and nurses
+            <div class="about-box">
+                <div class="medical-cover">> They are pretty much doctors and nurses
                 <br>> They are the ones who give out amnestics
                 <br>> They are allowed to conduct check-ups on personnel and give them medical assistance
                 <br>> They are not allowed to get past the stairs in TSC without a good reason
+            </div>
             </div>
             <div class="archive-box"><a href="https://discord.gg/unZ25GZNay">Join Here</a></div>
             <br>
 
             <h1>Facility Engineering & Technical Services [FETS]</h1>
-            <div class="about-box">> They are the facility engineers who repair broken objects
+            <div class="about-box">
+                <div class="fets-cover">> They are the facility engineers who repair broken objects
                 <br>> They are not allowed to get past the stairs in TSC without a good reason
             </div>
+            </div>
             <div class="archive-box"><a href="https://discord.gg/mYdvQr87vu">Join here</a></div>
+            <br>
+
+            <h1>Facility Management Staff [FMS]</h1>
+            <div class="about-box">
+                <div class="fms-cover">> They are the facility managers who supervise everything and manage things, not to be confused with BFA
+                <br>> They are the ones who raise alarms, make announcements, etc
+                <br>> Lower rank than BFA 
+            </div>
+            </div>
+            <div class="archive-box"><a href="https://discord.gg/Ng8e6PYVPq">Join here</a></div>
             <br>
 
             <h1>Board of Facility Administration [BFA]</h1>
@@ -399,10 +534,55 @@
         </div>
 
         <div id="factions" style="display: none;">
-            <h1>MORE FACTIONS NEEDED TO START WORKING</h1>
+            <h1>GRU Division "P"</h1>
+            <div class="about-box">
+            <div class="gru-cover">
+            > It's 1982, dusting the world with Cold War, breeze falling in between the world, falling together, within the destiny of absolute War. 
+            <br>> GRU-P is a specialized Russian Forces which was created to serve as Elite Forces and cooperation between Soviet Union and <br>Countries affiliated in World War 2. 
+            Although, as the World War 2 faded and world coming back together, countries like America <br>and Russia did not get along well. <br>Due to this, the group changed it's purpose as Main Intelligence, Special Forces and External Relations serving as Counterpart <br>for those countries. 
+            <br>> GRU-P has gained a lot of interests into Facility: Black Dagger due to it's environmental experiments and overall recourses <br>which is good advantage for positive results regarding Soviet Union. 
+            <img src="gruico.png" alt="" class="gru-icon">
+            </div>
+            </div>
+            <div class="archive-box"><a href="https://discord.gg/gBA2d49TbY">Join Here</a></div>
+            <br>
             <br>
 
-            <img src="under.png" alt="">
+            <h1>Anderson Robotics</h1>
+            <div class="about-box">
+            <div class="anderson-cover">
+            > Anderson Robotics (AR) is a cutting-edge Group of Interest (GoI) specializing in the development, production, <br>and sale of advanced robotics, cybernetics, and artificial intelligence. Known for its sleek, high-performance <br>technology and ethical (or ethically ambiguous) business practices, AR caters to a diverse clientele. 
+            <br> We pride ourselves on innovation and pushing the boundaries of what's possible in the world of robotics. 
+            <br> <br>
+            <h3> What we offer:</h3>
+            
+            > Advanced Technological Development
+            <br>> Dynamic and Innovative Projects
+            <br>> Opportunities for Creative Engineering and Scientific Exploration
+            <br>> Engaging Roleplay Scenarios
+            <br>> A community focused on the advancement of robotics and AI.
+            <br>
+            <br>
+            <h3>Divisions:</h3>
+            > Research & Development (R&D) Division: The heart of AR, focused on creating and refining <br>groundbreaking technologies
+            <br>> Merchant Division: The business arm of AR, handling negotiations, contracts, and sales
+            <br>> Security & Enforcement Division: Responsible for protecting AR's assets and personnel, <br>this division also handles deployment and security contracts
+            <br>> Cybernetic Division: Comprised of advanced robotic entities and cybernetically enhanced <br>individuals, this division showcases the pinnacle of AR's technological capabilities
+            <br>
+            <br>
+
+            <h3>Current Projects:</h3>
+            > Development of next-generation AI interfaces
+            <br>> Advancement in cybernetic augmentation technology
+            <br>> Expansion of our robotic security systems
+            <br>> Research into new energy sources for robotic applications 
+            <img src="ar.png" alt="" class="anderson-icon">
+            </div>
+            </div>
+            
+            <div class="archive-box"><a href="https://discord.gg/zhZTTdZbDA">Join Here</a></div>
+            <br>
+            <br>
         </div>
     </div>  
 </body>
